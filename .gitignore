@@ -1,17 +1,14 @@
 # ==================================
-# ASP.NET Core
+# Visual Studio / .NET Core (Backend - TiendaApi)
 # ==================================
-## Carpeta bin y obj
+## Binarios y Objetos
 [Bb]in/
 [Oo]bj/
 
-## Packages
+## Paquetes NuGet
 [Pp]ackages/
 *.nupkg
 .vs/
-.vs/
-
-## Visual Studio
 *.suo
 *.user
 *.config
@@ -24,38 +21,41 @@
 *.scc
 *.userprefs
 
-
-## Rider
-.idea/
+## Configuraciones Sensibles
+# La clave JWT y secretos de DB no deben ir al repo
+*.usersecrets
+appsettings.Development.json
+appsettings.Staging.json
+appsettings.Production.json
 
 # ==================================
-# Angular
+# Node / Angular (Frontend - TiendaApp)
 # ==================================
-## Carpeta de compilación
+## Dependencias
+/node_modules
+
+## Archivos de compilación y cache
 /dist
 /build
+.angular/
+.cache/
+.eslintcache
 
-## Archivos de logs
+## Logs y Debugging
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 *.log
-
-## Dependencias
-/node_modules
-
-## Archivos de configuración
-.angular/
-.vscode/
-
-## Archivos de caché
-.cache/
-.eslintcache
-
-## Archivos de test
 /coverage
 
 # ==================================
-# macOS
+# Editores y OS
 # ==================================
+## Visual Studio Code
+.vscode/
+
+## macOS
 .DS_Store
+
+## Linux
+*~
